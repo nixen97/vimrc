@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Deploy') {
             steps {
-                cp .vimrc /media/user/data/
+                sh "cp .vimrc /media/user/data/"
             }
         }
     }
